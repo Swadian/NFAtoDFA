@@ -37,6 +37,8 @@ int main()
     int Numararce;
     fin>>Numararce;
     unordered_map<string,vector<transition>> arce;
+    unordered_map<string,vector<transition>> arcefinal;
+
     set<char> alphabet;
     string start,dest;
     transition t;
@@ -76,7 +78,7 @@ int main()
                     DFAstates.insert(ss);//inserez in setul de stari
                     t.dest=ss;
                     t.l=c;
-                    arce[current_state].push_back(t);//creez tranzitia
+                    arcefinal[current_state].push_back(t);//creez tranzitia
                     Numararce++;
                 }
         }
@@ -90,7 +92,7 @@ int main()
     for(auto it=DFAstates.begin();it!=DFAstates.end();it++)
     {
         for(int i=0;i<(int)arce[*it].size();i++)
-            fout<<*it<<' '<<arce[*it][i].dest<<' '<<arce[*it][i].l<<'\n';
+            fout<<*it<<' '<<arcefinal[*it][i].dest<<' '<<arcefinal[*it][i].l<<'\n';
     }
     return 0;
 }
