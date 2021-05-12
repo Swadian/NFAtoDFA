@@ -1,0 +1,19 @@
+4
+A B C D 
+16
+A D b
+A B a
+A B a
+A D b
+B B a
+B C b
+B B a
+B C b
+C B a
+C C b
+C B a
+C C b
+D D a
+D D b
+D D a
+D D b

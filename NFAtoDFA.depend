@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1620812270 source:f:\code\nfatodfa\main.cpp
+	<fstream>
+	<vector>
+	<string>
+	<unordered_map>
+	<algorithm>
+	<set>
+	<queue>
+
